@@ -1,28 +1,21 @@
 package com.homework.months;
 
 public class Helper {
-    public static boolean isHoliday(Month month, int day) {
-        return month.getHolidays().contains(day);
+    public static void printHolidaysInMonth(Months month) {
+        System.out.println("Holidays in " + month.name() + " are: " + month.getHolidaysInMonth().toString() + "\n");
     }
 
-    public static void printAllHolidaysInMonth(Month m) {
-        System.out.println("Printing all holidays in " + m);
-        for (int i : m.getHolidays()) {
-            System.out.println(i);
-        }
+    public static void printDaysNumberInMonth(Months month) {
+        System.out.println("Days count in " + month.name() + " is: " + month.countOfDaysInMonth + "\n");
     }
 
-    public static void printAllMonths() {
-        System.out.print(Month.values()[0]);
-        for (Month m : Month.values()) {
-            System.out.print(", " + m);
-        }
-        System.out.println("\n");
+    public static boolean isValidHoliday(Months month, int day) {
+        return month.getHolidaysInMonth().containsValue(day);
     }
 
-    public static void printDaysInMonth(Month m) {
-        System.out.println(m + " has " + m.getCOUNT_OF_DAYS() + " days");
-
+    public static void traversingMonths() {
+        for (Months m : Months.values())
+            System.out.println(m);
     }
 
 }
