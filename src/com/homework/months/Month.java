@@ -57,6 +57,7 @@ public enum Month {
     Month(int COUNT_OF_DAYS, ArrayList<Integer> holidays) {
         this.COUNT_OF_DAYS = COUNT_OF_DAYS;
         this.holidays = holidays;
+
     }
 
 }
