@@ -1,3 +1,5 @@
+package com.student;
+
 import java.util.Objects;
 
 public class Student {

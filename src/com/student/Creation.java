@@ -1,3 +1,5 @@
+package com.student;
+
 import java.util.*;
 
 public class Creation {
