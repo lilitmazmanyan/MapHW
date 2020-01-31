@@ -22,5 +22,7 @@ public class Helper {
 
     public static void printDaysInMonth(Month m) {
         System.out.println(m + " has " + m.getCOUNT_OF_DAYS() + " days");
+
     }
+
 }
