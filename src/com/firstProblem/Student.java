@@ -1,4 +1,4 @@
-package com.student;
+package com.firstProblem;
 
 import java.util.Objects;
 
@@ -6,13 +6,19 @@ public class Student {
     String firstName;
     String lastName;
     int age;
+    Enum faculty;
 
-    Student(String firstName, String lastName, int age) throws Exception {
+    public Enum getFaculty() {
+        return faculty;
+    }
+
+    Student(String firstName, String lastName, int age, Faculties faculty) throws Exception {
         this.firstName = firstName;
         this.lastName = lastName;
         if (age > 0 && age < 100)
             this.age = age;
         else throw new Exception("Age of " + this.firstName + " " + this.lastName + " is invalid");
+        this.faculty = faculty;
     }
 
 
